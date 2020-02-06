@@ -232,18 +232,18 @@ public extension CheckingInternet {
     }
     
     // MARK: - *** Connection test methods ***
-    @available(*, deprecated, message: "Please use `connection != .none`")
+    @available(*, deprecated, message: "Please use connection != .none")
     var isReachable: Bool {
         return connection != .unavailable
     }
     
-    @available(*, deprecated, message: "Please use `connection == .cellular`")
+    @available(*, deprecated, message: "Please use connection == .cellular")
     var isReachableViaWWAN: Bool {
         // Check we're not on the simulator, we're REACHABLE and check we're on WWAN
         return connection == .cellular
     }
     
-    @available(*, deprecated, message: "Please use `connection == .wifi`")
+    @available(*, deprecated, message: "Please use connection == .wifi")
     var isReachableViaWiFi: Bool {
         return connection == .wifi
     }

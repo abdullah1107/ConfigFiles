@@ -14,5 +14,12 @@ class UrlManager: NSObject {
     class func baseURL()->String {
         return DEV_BASE_URL
     }
+    
+    func findRepositories( pathwithOutq:String, matching query: String)-> URL {
+          let api = UrlManager.baseURL()
+          let endpoint = "\(pathwithOutq)?q=\(query)"
+          let url = (URL(string: api + endpoint) ?? URL(string: "https://www.google.com"))!
+          return url
+      }
      
 }

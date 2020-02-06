@@ -22,6 +22,9 @@
 		1040C63823EC6EF8005D3651 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1040C63523EC6EF8005D3651 /* Toast.swift */; };
 		1040C63923EC6EF8005D3651 /* UIImageExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1040C63623EC6EF8005D3651 /* UIImageExtention.swift */; };
 		1040C63A23EC6EF8005D3651 /* CheckInternetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1040C63723EC6EF8005D3651 /* CheckInternetConnection.swift */; };
+		1040C63C23EC7F6C005D3651 /* UIImageViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1040C63B23EC7F6C005D3651 /* UIImageViewExtention.swift */; };
+		1040C63F23EC9102005D3651 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1040C63E23EC9101005D3651 /* PopUpViewController.swift */; };
+		1040C64123EC9669005D3651 /* UIViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1040C64023EC9669005D3651 /* UIViewExtention.swift */; };
 		1062357923EB1CCA00E53626 /* DateFormateExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062357823EB1CCA00E53626 /* DateFormateExtention.swift */; };
 		1062357B23EB3D6D00E53626 /* UrlSessionExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062357A23EB3D6D00E53626 /* UrlSessionExtention.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +47,9 @@
 		1040C63523EC6EF8005D3651 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		1040C63623EC6EF8005D3651 /* UIImageExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtention.swift; sourceTree = "<group>"; };
 		1040C63723EC6EF8005D3651 /* CheckInternetConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInternetConnection.swift; sourceTree = "<group>"; };
+		1040C63B23EC7F6C005D3651 /* UIImageViewExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtention.swift; sourceTree = "<group>"; };
+		1040C63E23EC9101005D3651 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		1040C64023EC9669005D3651 /* UIViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtention.swift; sourceTree = "<group>"; };
 		1062357823EB1CCA00E53626 /* DateFormateExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormateExtention.swift; sourceTree = "<group>"; };
 		1062357A23EB3D6D00E53626 /* UrlSessionExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlSessionExtention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +97,7 @@
 		10063FAC23EAFA140035BD1D /* Extention */ = {
 			isa = PBXGroup;
 			children = (
+				1040C63B23EC7F6C005D3651 /* UIImageViewExtention.swift */,
 				1040C63723EC6EF8005D3651 /* CheckInternetConnection.swift */,
 				1040C63523EC6EF8005D3651 /* Toast.swift */,
 				1040C63623EC6EF8005D3651 /* UIImageExtention.swift */,
@@ -100,6 +107,7 @@
 				10063FB923EB023A0035BD1D /* UIViewControllerExtention.swift */,
 				1062357823EB1CCA00E53626 /* DateFormateExtention.swift */,
 				1062357A23EB3D6D00E53626 /* UrlSessionExtention.swift */,
+				1040C64023EC9669005D3651 /* UIViewExtention.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -126,6 +134,7 @@
 		10063FAF23EAFA370035BD1D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1040C63D23EC90B2005D3651 /* POPUPViewController */,
 				10063FBB23EB02C90035BD1D /* DetailViewController */,
 				10063FB823EAFB4C0035BD1D /* MainViewController */,
 			);
@@ -146,6 +155,14 @@
 				10063FBC23EB02ED0035BD1D /* DetailsViewController.swift */,
 			);
 			path = DetailViewController;
+			sourceTree = "<group>";
+		};
+		1040C63D23EC90B2005D3651 /* POPUPViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1040C63E23EC9101005D3651 /* PopUpViewController.swift */,
+			);
+			path = POPUPViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,13 +243,16 @@
 				10063F9923EAFA0B0035BD1D /* AppDelegate.swift in Sources */,
 				1040C63A23EC6EF8005D3651 /* CheckInternetConnection.swift in Sources */,
 				1040C63923EC6EF8005D3651 /* UIImageExtention.swift in Sources */,
+				1040C63F23EC9102005D3651 /* PopUpViewController.swift in Sources */,
 				1062357B23EB3D6D00E53626 /* UrlSessionExtention.swift in Sources */,
 				10063F9B23EAFA0B0035BD1D /* SceneDelegate.swift in Sources */,
+				1040C64123EC9669005D3651 /* UIViewExtention.swift in Sources */,
 				1062357923EB1CCA00E53626 /* DateFormateExtention.swift in Sources */,
 				10063FB623EAFAE20035BD1D /* UrlManager.swift in Sources */,
 				10063FBA23EB023A0035BD1D /* UIViewControllerExtention.swift in Sources */,
 				10063FB523EAFAE20035BD1D /* AppConfigs.swift in Sources */,
 				10063FB123EAFA6D0035BD1D /* MainViewController.swift in Sources */,
+				1040C63C23EC7F6C005D3651 /* UIImageViewExtention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

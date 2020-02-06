@@ -2,7 +2,15 @@
 //  Libraryapp
 //  Created by Muhammad Abdullah Al Mamun on 6/2/20.
 //  Copyright © 2020 Muhammad Abdullah Al Mamun. All rights reserved.
+
+//#######################################################################
+//let apiUrl = "http://127.0.0.1:8000/api/v1/account/1"
+//print(apiUrl)
+//fetchDatawithNSDictionary(apitype: "GET", urlString: apiUrl, baseURL: "") { (jsonDict) in
+//    print(jsonDict)
 //
+//}
+//######################################################################
 
 import Foundation
 import UIKit
@@ -10,7 +18,7 @@ import UIKit
 var token:String = "685dc509e52d34adbb8df473d8ab959a35fd7ba5"
 
 //################################################################################
-//----->GET----->
+//----->GET----->[if data comes that formation]
 //################################################################################
 func fetchDatawithNSDictionary(apitype: String, urlString: String, baseURL: String, completion: @escaping (NSDictionary) -> Void){
     
@@ -103,6 +111,20 @@ func fetchDatawithNSArray(apitype: String, urlString: String, baseURL: String, c
 
 //################################################################################
 //--------->POST -----> without token
+// let apiUrl = "http://127.0.0.1:8000/api/v1/account/login"
+//    var param:[String:Any] = [:]
+//    param["username"] = "abc@gmail.com"
+//    param["password"] = "mamun54"
+//
+//
+//    print(apiUrl)
+//    postDatawithNSDictionary(urlString:apiUrl,parameters:param,baseURL: "") { (jsonDict) in
+//
+//        print(jsonDict)
+//
+//    }
+//}
+
 //################################################################################
 
 
@@ -201,6 +223,16 @@ func postDatawithNSDictionarywithToken(urlString: String, parameters:[String:Any
 
 //################################################################################
 //--------->PUT -----> with token
+
+//let apiUrl = "http:/127.0.0.1:8000/api/v1/account/notificationupdate/1"
+//       var param:[String:Any] = [:]
+//       param["status"] = "true"
+//       print(apiUrl)
+//       putDatawithNSDictionarywithToken(urlString:apiUrl,parameters:param,baseURL: "") { (jsonDict) in
+//
+//           print(jsonDict)
+//
+//       }
 //################################################################################
 func putDatawithNSDictionarywithToken(urlString: String, parameters:[String:Any], baseURL: String, completion: @escaping (NSDictionary) -> Void) {
     
