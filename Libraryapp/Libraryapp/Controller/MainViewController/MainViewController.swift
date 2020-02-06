@@ -93,7 +93,7 @@ extension MainViewController{
     func getupdateData(){
         let apiUrl = "http:/127.0.0.1:8000/api/v1/account/notificationupdate/1"
         var param:[String:Any] = [:]
-        param["status"] = "false"
+        param["status"] = "true"
         print(apiUrl)
         putDatawithNSDictionarywithToken(urlString:apiUrl,parameters:param,baseURL: "") { (jsonDict) in
             
