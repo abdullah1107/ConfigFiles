@@ -25,8 +25,14 @@
 		1040C63C23EC7F6C005D3651 /* UIImageViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1040C63B23EC7F6C005D3651 /* UIImageViewExtention.swift */; };
 		1040C63F23EC9102005D3651 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1040C63E23EC9101005D3651 /* PopUpViewController.swift */; };
 		1040C64123EC9669005D3651 /* UIViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1040C64023EC9669005D3651 /* UIViewExtention.swift */; };
+		10534DD823FE6FE00097CCC1 /* UnderlineTextFieldExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10534DD723FE6FE00097CCC1 /* UnderlineTextFieldExtention.swift */; };
+		10534DDA23FE75890097CCC1 /* DeviceInfoExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10534DD923FE75890097CCC1 /* DeviceInfoExtention.swift */; };
+		10534DEA23FE78F20097CCC1 /* TextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10534DE923FE78F20097CCC1 /* TextModifier.swift */; };
+		10534DED23FE794F0097CCC1 /* TimeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10534DEC23FE794F0097CCC1 /* TimeConversion.swift */; };
 		1062357923EB1CCA00E53626 /* DateFormateExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062357823EB1CCA00E53626 /* DateFormateExtention.swift */; };
 		1062357B23EB3D6D00E53626 /* UrlSessionExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062357A23EB3D6D00E53626 /* UrlSessionExtention.swift */; };
+		1069651C23FD9EAE00AB92C1 /* StoryboardExtenttion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1069651B23FD9EAE00AB92C1 /* StoryboardExtenttion.swift */; };
+		10E4A11F23FF048F008EF239 /* UINavigationControllerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E4A11E23FF048F008EF239 /* UINavigationControllerExtention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,8 +56,14 @@
 		1040C63B23EC7F6C005D3651 /* UIImageViewExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtention.swift; sourceTree = "<group>"; };
 		1040C63E23EC9101005D3651 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		1040C64023EC9669005D3651 /* UIViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtention.swift; sourceTree = "<group>"; };
+		10534DD723FE6FE00097CCC1 /* UnderlineTextFieldExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextFieldExtention.swift; sourceTree = "<group>"; };
+		10534DD923FE75890097CCC1 /* DeviceInfoExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoExtention.swift; sourceTree = "<group>"; };
+		10534DE923FE78F20097CCC1 /* TextModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextModifier.swift; sourceTree = "<group>"; };
+		10534DEC23FE794F0097CCC1 /* TimeConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeConversion.swift; sourceTree = "<group>"; };
 		1062357823EB1CCA00E53626 /* DateFormateExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormateExtention.swift; sourceTree = "<group>"; };
 		1062357A23EB3D6D00E53626 /* UrlSessionExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlSessionExtention.swift; sourceTree = "<group>"; };
+		1069651B23FD9EAE00AB92C1 /* StoryboardExtenttion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExtenttion.swift; sourceTree = "<group>"; };
+		10E4A11E23FF048F008EF239 /* UINavigationControllerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,17 +109,22 @@
 		10063FAC23EAFA140035BD1D /* Extention */ = {
 			isa = PBXGroup;
 			children = (
-				1040C63B23EC7F6C005D3651 /* UIImageViewExtention.swift */,
-				1040C63723EC6EF8005D3651 /* CheckInternetConnection.swift */,
-				1040C63523EC6EF8005D3651 /* Toast.swift */,
-				1040C63623EC6EF8005D3651 /* UIImageExtention.swift */,
-				10063FB223EAFAE20035BD1D /* AppConfigs.swift */,
-				10063FB423EAFAE20035BD1D /* ColorConfigure.swift */,
-				10063FB323EAFAE20035BD1D /* UrlManager.swift */,
-				10063FB923EB023A0035BD1D /* UIViewControllerExtention.swift */,
-				1062357823EB1CCA00E53626 /* DateFormateExtention.swift */,
-				1062357A23EB3D6D00E53626 /* UrlSessionExtention.swift */,
-				1040C64023EC9669005D3651 /* UIViewExtention.swift */,
+				10E4A11D23FF0453008EF239 /* NavigatorExtention */,
+				10534DEB23FE79360097CCC1 /* TimeExtention */,
+				10534DE823FE78D10097CCC1 /* TextExtention */,
+				10534DE723FE78790097CCC1 /* StoryBoardExtention */,
+				10534DE623FE78690097CCC1 /* UIVIewExtention */,
+				10534DE523FE78540097CCC1 /* DeviceExtention */,
+				10534DE423FE78320097CCC1 /* URLExtention */,
+				10534DE323FE78110097CCC1 /* ToastExtention */,
+				10534DE223FE77CE0097CCC1 /* DateExteention */,
+				10534DE123FE779A0097CCC1 /* UIViewControllerExtention */,
+				10534DE023FE77640097CCC1 /* UrlSessionExtention */,
+				10534DDF23FE77120097CCC1 /* ColorExtention */,
+				10534DDE23FE76F60097CCC1 /* AppConfigExtention */,
+				10534DDD23FE76C30097CCC1 /* TextFieldExtention */,
+				10534DDC23FE767A0097CCC1 /* IntercheckExtention */,
+				10534DDB23FE765E0097CCC1 /* ImageExtention */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -163,6 +180,135 @@
 				1040C63E23EC9101005D3651 /* PopUpViewController.swift */,
 			);
 			path = POPUPViewController;
+			sourceTree = "<group>";
+		};
+		10534DDB23FE765E0097CCC1 /* ImageExtention */ = {
+			isa = PBXGroup;
+			children = (
+				1040C63623EC6EF8005D3651 /* UIImageExtention.swift */,
+				1040C63B23EC7F6C005D3651 /* UIImageViewExtention.swift */,
+			);
+			path = ImageExtention;
+			sourceTree = "<group>";
+		};
+		10534DDC23FE767A0097CCC1 /* IntercheckExtention */ = {
+			isa = PBXGroup;
+			children = (
+				1040C63723EC6EF8005D3651 /* CheckInternetConnection.swift */,
+			);
+			path = IntercheckExtention;
+			sourceTree = "<group>";
+		};
+		10534DDD23FE76C30097CCC1 /* TextFieldExtention */ = {
+			isa = PBXGroup;
+			children = (
+				10534DD723FE6FE00097CCC1 /* UnderlineTextFieldExtention.swift */,
+			);
+			path = TextFieldExtention;
+			sourceTree = "<group>";
+		};
+		10534DDE23FE76F60097CCC1 /* AppConfigExtention */ = {
+			isa = PBXGroup;
+			children = (
+				10063FB223EAFAE20035BD1D /* AppConfigs.swift */,
+			);
+			path = AppConfigExtention;
+			sourceTree = "<group>";
+		};
+		10534DDF23FE77120097CCC1 /* ColorExtention */ = {
+			isa = PBXGroup;
+			children = (
+				10063FB423EAFAE20035BD1D /* ColorConfigure.swift */,
+			);
+			path = ColorExtention;
+			sourceTree = "<group>";
+		};
+		10534DE023FE77640097CCC1 /* UrlSessionExtention */ = {
+			isa = PBXGroup;
+			children = (
+				1062357A23EB3D6D00E53626 /* UrlSessionExtention.swift */,
+			);
+			path = UrlSessionExtention;
+			sourceTree = "<group>";
+		};
+		10534DE123FE779A0097CCC1 /* UIViewControllerExtention */ = {
+			isa = PBXGroup;
+			children = (
+				10063FB923EB023A0035BD1D /* UIViewControllerExtention.swift */,
+			);
+			path = UIViewControllerExtention;
+			sourceTree = "<group>";
+		};
+		10534DE223FE77CE0097CCC1 /* DateExteention */ = {
+			isa = PBXGroup;
+			children = (
+				1062357823EB1CCA00E53626 /* DateFormateExtention.swift */,
+			);
+			path = DateExteention;
+			sourceTree = "<group>";
+		};
+		10534DE323FE78110097CCC1 /* ToastExtention */ = {
+			isa = PBXGroup;
+			children = (
+				1040C63523EC6EF8005D3651 /* Toast.swift */,
+			);
+			path = ToastExtention;
+			sourceTree = "<group>";
+		};
+		10534DE423FE78320097CCC1 /* URLExtention */ = {
+			isa = PBXGroup;
+			children = (
+				10063FB323EAFAE20035BD1D /* UrlManager.swift */,
+			);
+			path = URLExtention;
+			sourceTree = "<group>";
+		};
+		10534DE523FE78540097CCC1 /* DeviceExtention */ = {
+			isa = PBXGroup;
+			children = (
+				10534DD923FE75890097CCC1 /* DeviceInfoExtention.swift */,
+			);
+			path = DeviceExtention;
+			sourceTree = "<group>";
+		};
+		10534DE623FE78690097CCC1 /* UIVIewExtention */ = {
+			isa = PBXGroup;
+			children = (
+				1040C64023EC9669005D3651 /* UIViewExtention.swift */,
+			);
+			path = UIVIewExtention;
+			sourceTree = "<group>";
+		};
+		10534DE723FE78790097CCC1 /* StoryBoardExtention */ = {
+			isa = PBXGroup;
+			children = (
+				1069651B23FD9EAE00AB92C1 /* StoryboardExtenttion.swift */,
+			);
+			path = StoryBoardExtention;
+			sourceTree = "<group>";
+		};
+		10534DE823FE78D10097CCC1 /* TextExtention */ = {
+			isa = PBXGroup;
+			children = (
+				10534DE923FE78F20097CCC1 /* TextModifier.swift */,
+			);
+			path = TextExtention;
+			sourceTree = "<group>";
+		};
+		10534DEB23FE79360097CCC1 /* TimeExtention */ = {
+			isa = PBXGroup;
+			children = (
+				10534DEC23FE794F0097CCC1 /* TimeConversion.swift */,
+			);
+			path = TimeExtention;
+			sourceTree = "<group>";
+		};
+		10E4A11D23FF0453008EF239 /* NavigatorExtention */ = {
+			isa = PBXGroup;
+			children = (
+				10E4A11E23FF048F008EF239 /* UINavigationControllerExtention.swift */,
+			);
+			path = NavigatorExtention;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,17 +387,23 @@
 				10063FB723EAFAE20035BD1D /* ColorConfigure.swift in Sources */,
 				10063FBD23EB02ED0035BD1D /* DetailsViewController.swift in Sources */,
 				10063F9923EAFA0B0035BD1D /* AppDelegate.swift in Sources */,
+				10534DEA23FE78F20097CCC1 /* TextModifier.swift in Sources */,
 				1040C63A23EC6EF8005D3651 /* CheckInternetConnection.swift in Sources */,
 				1040C63923EC6EF8005D3651 /* UIImageExtention.swift in Sources */,
 				1040C63F23EC9102005D3651 /* PopUpViewController.swift in Sources */,
 				1062357B23EB3D6D00E53626 /* UrlSessionExtention.swift in Sources */,
+				10534DD823FE6FE00097CCC1 /* UnderlineTextFieldExtention.swift in Sources */,
 				10063F9B23EAFA0B0035BD1D /* SceneDelegate.swift in Sources */,
+				10E4A11F23FF048F008EF239 /* UINavigationControllerExtention.swift in Sources */,
 				1040C64123EC9669005D3651 /* UIViewExtention.swift in Sources */,
 				1062357923EB1CCA00E53626 /* DateFormateExtention.swift in Sources */,
 				10063FB623EAFAE20035BD1D /* UrlManager.swift in Sources */,
 				10063FBA23EB023A0035BD1D /* UIViewControllerExtention.swift in Sources */,
+				1069651C23FD9EAE00AB92C1 /* StoryboardExtenttion.swift in Sources */,
 				10063FB523EAFAE20035BD1D /* AppConfigs.swift in Sources */,
+				10534DED23FE794F0097CCC1 /* TimeConversion.swift in Sources */,
 				10063FB123EAFA6D0035BD1D /* MainViewController.swift in Sources */,
+				10534DDA23FE75890097CCC1 /* DeviceInfoExtention.swift in Sources */,
 				1040C63C23EC7F6C005D3651 /* UIImageViewExtention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,7 +549,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 394UL6G6J2;
+				DEVELOPMENT_TEAM = S587T76P6H;
 				INFOPLIST_FILE = Libraryapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -415,7 +567,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 394UL6G6J2;
+				DEVELOPMENT_TEAM = S587T76P6H;
 				INFOPLIST_FILE = Libraryapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

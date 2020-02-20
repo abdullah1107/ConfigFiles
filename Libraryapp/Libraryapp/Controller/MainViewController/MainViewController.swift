@@ -10,17 +10,23 @@ class MainViewController: UIViewController {
     
     lazy var customView = UIView()
     lazy var custombutton = UIButton()
+    lazy var customImage = UIImageView()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        designView()
+        //designView()
         
         //updated data
-        getDictionaryData()
-        getpostDictionaryData()
-        getupdateData()
+        //getDictionaryData()
+        //getpostDictionaryData()
+        //getupdateData()
         // Do any additional setup after loading the view.
+        //loadImageViewCustomFunction()
+        customView.fillSuperview()
+        //customView.height = view.frame.height/2
+        //customView.backgroundColor = .green
+        
     }
     
     func designView(){
@@ -102,3 +108,13 @@ extension MainViewController{
         }
     }
 }
+extension MainViewController{
+   
+    func loadImageViewCustomFunction(){
+       //  Use like this ->
+        
+        //customImage.setimage(urlString: "1.jpg")
+        
+        }
+    }
+

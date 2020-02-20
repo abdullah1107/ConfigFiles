@@ -1,7 +1,7 @@
 //
 //  Image.swift
 //  Libraryapp
-//  Created by Md Zahidul Islam Mazumder on 6/2/20.
+//  Created by Muhammad Abdullah Al Mamun on 6/2/20.
 //  Copyright © 2020 Muhammad Abdullah Al Mamun. All rights reserved.
 //
 
