@@ -107,5 +107,45 @@ class SecondController{
 //obj.fromsecondControllerMethod()
 
 
+protocol MessageDelegate{
+    func shareMessage(msg: String)
+}
+
+class Receiver: MessageDelegate{
+
+    var rmsg:String?
+
+    func shareMessage(msg:String) {
+        rmsg = msg
+        print(msg)
+    }
+}
+
+
+
+class Sender{
+
+    
+    var sendermessage:String?
+
+    var delegate: MessageDelegate?
+
+    func sendMessage() {
+        delegate?.shareMessage(msg: sendermessage ?? "")
+    }
+}
+
+
+var sender = Sender()
+sender.sendermessage = "my name is mamun"
+var receiver: Receiver = Receiver()
+
+//give Sender it's Receiver
+sender.delegate = receiver
+
+//Trigger the sender to send message to it's Receiver
+sender.sendMessage()
+
+
 
 
