@@ -23,7 +23,7 @@ class MainViewController: UIViewController {
         //getupdateData()
         // Do any additional setup after loading the view.
         //loadImageViewCustomFunction()
-        customView.fillSuperview()
+        //customView.fillSuperview()
         //customView.height = view.frame.height/2
         //customView.backgroundColor = .green
         
