@@ -1,12 +1,12 @@
 import UIKit
 
 protocol Bird {
-  var name: String { get }
-  var canFly: Bool { get }
+    var name: String { get }
+    var canFly: Bool { get }
 }
 
 protocol Flyable {
-  var airspeedVelocity: Double { get }
+    var airspeedVelocity: Double { get }
 }
 
 protocol methodProtocol{
@@ -27,24 +27,24 @@ class FlappyBird: Bird, Flyable,methodProtocol{
         print("this is inside!!!")
     }
     
-  
+    
     
     let name: String = ""
     let flappyAmplitude: Double = 0.0
     let flappyFrequency: Double = 0.0
     let canFly = true
-
-  var airspeedVelocity: Double {
-    3 * flappyFrequency * flappyAmplitude
-  }
- 
+    
+    var airspeedVelocity: Double {
+        3 * flappyFrequency * flappyAmplitude
+    }
+    
     
     
 }
 
-let obj = FlappyBird()
-print(obj.customprintProtocol())
-print(obj.helloprotocol(type: "mamun how are you?") as Any)
+//let obj = FlappyBird()
+//print(obj.customprintProtocol())
+//print(obj.helloprotocol(type: "mamun how are you?") as Any)
 
 
 
@@ -73,6 +73,39 @@ print(obj.helloprotocol(type: "mamun how are you?") as Any)
 //    }
 //
 //}
+
+protocol customProtocol{
+    func dataPassingFunction(dataString:String)
+}
+
+class FirstController:customProtocol{
+    
+    func dataPassingFunction(dataString:String) {
+        print("data:",dataString)
+    }
+    
+    func datapass(temp:String){
+        print(temp)
+    }
+
+}
+
+class SecondController{
+    
+    var mainViewController = FirstController()
+    var delegate:customProtocol?
+    
+    func fromsecondControllerMethod(){
+        //mainViewController.datapass(temp:"inside second one")
+        //mainViewController.dataPassingFunction(dataString: "tempdata")
+        delegate?.dataPassingFunction(dataString: "it is from second Class")
+    }
+    
+}
+
+//var obj = SecondController()
+//obj.fromsecondControllerMethod()
+
 
 
 
